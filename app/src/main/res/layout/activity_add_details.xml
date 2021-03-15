@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".AddDetailsActivity">
+
+    <EditText
+        android:id="@+id/nameEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addressEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="User Address"
+        app:layout_constraintEnd_toEndOf="@+id/nameEd"
+        app:layout_constraintStart_toStartOf="@+id/nameEd"
+        app:layout_constraintTop_toBottomOf="@+id/nameEd" />
+
+    <EditText
+        android:id="@+id/phoneEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Phone Number"
+        app:layout_constraintEnd_toEndOf="@+id/addressEd"
+        app:layout_constraintStart_toStartOf="@+id/addressEd"
+        app:layout_constraintTop_toBottomOf="@+id/addressEd" />
+
+    <Button
+        android:id="@+id/btnSaveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#E91E63"
+        android:text="Save"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/phoneEd"
+        app:layout_constraintStart_toStartOf="@+id/phoneEd"
+        app:layout_constraintTop_toBottomOf="@+id/phoneEd" />
+</androidx.constraintlayout.widget.ConstraintLayout>
